@@ -1,0 +1,36 @@
+Arrays on Heap:
+
+	int* A;
+		A is a type pointer to int 
+		Read from right to left
+	A = calloc(n,sizeof(int));
+		(contiguous allocation)
+		Arguments:
+			n may be a variable
+			sizeof(dataType)
+
+
+Creating an array statically
+node:(NOT POSSIBLE IN JAVA)
+	int A[5]; //Creates a stack with a size of 5
+
+all objects are created from heap memory
+you can't create a variable from stack memory
+only their variable names
+
+note also:same thing
+	int* A;
+	A = malloc(n*sizeof(int));
+
+	A --> array of length n
+
+A is the stack
+The array itself is heap
+
+could do:
+	int* A = calloc(5,sizeof(int));
+
+use calloc from now on;
+really no reason to use malloc
+
+look @ Examples\Lecture\C_Programs\Memory|ArrayOnHeap.c

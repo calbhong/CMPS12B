@@ -1,0 +1,15 @@
+// README for pa3
+// Calvin Hong
+// cbhong
+// CMPS12B/M
+
+
+README 
+Dictionary.java
+//Does not use inner class pair
+DictionaryTest.java 
+DuplicateKeyException.java 
+KeyNotFoundException.java 
+DictionaryInterface.java 
+DictionaryClient.java 
+Makefile 

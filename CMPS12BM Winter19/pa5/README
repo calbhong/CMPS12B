@@ -1,0 +1,11 @@
+// README for pa4
+// Calvin Hong
+// cbhong
+// CMPS12B/M
+
+README 
+Makefile
+Dictionary.c
+Dictionary.h
+DictionaryTest.c
+DictionaryClient.c

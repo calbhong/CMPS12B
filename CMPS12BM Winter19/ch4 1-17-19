@@ -1,0 +1,71 @@
+Chapter 4: Abstract Data Types
+1)a set S of "mathematical structures" called states or values. this is data
+2)an associated set of operations on the states in S.
+
+A Data structure is construct in compuer language that stores data in some configuration/some encoding.
+
+Ex: an array, or a primitive data tpe(int, double, ...)
+
+Ex:(ADT)
+List of Intergers 
+-S is the set of all finite sequences of intergers up to a fixed maximum length.(MAX_LENGTH)
+
+S={..., {}, {1,2,3}, {-5, 2, 8, 12},...}
+
+-Operations:
+	1)createList()
+		creates an empty list
+	2)isEmpty()
+		determines if a list is empty (true or false)	
+	3)size()
+		determines length of a list
+	4)add(index,item)
+		adds an item to the list at a given position(index)
+	5)remove(index)
+		delete the item at position index from list
+	6)removeAll()
+		resets list to empty state
+	7)get(index)
+		return the item at position index
+
+----Note----
+list indicies are in range:
+	1 <= index <= size() <= MAX_LENGTH	
+
+When an item is added at Position index, the items are pushed to the right to make room.
+If an item is removed, all items to its right move to the left.
+
+--Operation--	 --state--	   --ReturnValue--
+createList()		()			
+isEmpty()			()				True
+add(1,5)			(5)				
+add(2,3)			(5,3)
+add(3,9)			(5,3,9)
+add(2,7)			(5,7,3,9)
+size()				(5,7,3,9)		4
+get(2)				(5,7,3,9)		7
+remove(3)			(5,7,9)		
+isEmpty()			(5,7,9)			False
+removeAll()			()
+
+----Implementation----
+we can use any array of fixed length to implement this ADT.
+
+array index 
+[0,1,2,3,...,MAX_LENGTH-1]
+list index
+[0,1,2,3,...,MAX_LEGNTH]
+
+----Pre-conditions----
+noteL some aDS. are undefined in some states.
+	-add(?,?) cannot be called if size() is MAX_LENGTH.
+	-add(index,?) requires:
+		1 <= index <= size()+1 <= MAX_LENGTH
+	-remove() requires isEmpty() to be false.
+	-remove(index) requires:
+		1 <= index <= size()
+
+We establish Pre-conditions as above for each oepration 
+
+
+

@@ -1,0 +1,12 @@
+// README for lab7
+// Calvin Hong
+// cbhong
+// CMPS12B/M
+
+README 
+Makefile
+Dictionary.java
+DictionaryClient.java
+DictionaryInterface.java
+DuplicateKeyException.java
+KeyNotFoundException.java
